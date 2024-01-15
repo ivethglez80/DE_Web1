@@ -5,7 +5,7 @@ import './App.css'
 import Home from './views/home'
 import Footer from './modules/footer'
 import GiftsView from './views/giftsView'
-import GiftListforGuests from './dashboards/GiftListforGuests'
+//import GiftListforGuests from './dashboards/GiftListforGuests'
 import GuestCardsContainer from './cards/guestsDshBrd/guestCardsContainer'
 
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gifts" element={<GiftsView />} />
-          <Route path="/gifts-list" element={<GiftListforGuests />} />
+          {/* <Route path="/gifts-list" element={<GiftListforGuests />} /> */}
           <Route path="/lista-invitados" element={<GuestCardsContainer />} />
         </Routes>
       </BrowserRouter>
