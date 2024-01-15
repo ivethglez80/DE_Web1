@@ -4,12 +4,14 @@ export const GET_GUESTS = "GET_GUESTS"
 export const PUT_ASISTE = "PUT_ASISTE"
 export const POST_GUEST = "POST_GUEST"
 
-const guestDBUrl = import.meta.env.VITE_GUESTS_LIST || "http://localhost:3001/guestsDB";
+//const guestDBUrl = import.meta.env.VITE_GUESTS_LIST || "http://localhost:3001/guestsDB";
+const guestDBUrl = import.meta.env.VITE_BACK_DEPLOY;
 
+ 
 export const getGuests = () => {
     return async function (dispatch) {
         try {
-            const apiData = await axios.get("http://localhost:3001/guestsDB");
+            const apiData = await axios.get(guestDBUrl);
             const guests = apiData.data;
             console.log(guests);
             dispatch({ type: GET_GUESTS, payload: guests });
