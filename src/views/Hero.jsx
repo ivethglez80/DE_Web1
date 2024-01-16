@@ -37,21 +37,22 @@ const Hero = () => {
                                 "
                 >
 
-                    <div className="md:w-2/3 md:flex grid grid-cols-2 grid-rows-7">
-                        <img src={amorbg} alt="" className="z-[-10] absolute w-screen md:hidden" />
-                        <div className="pt-3 col-start-1 col-span-1 row-start-1 row-span-4 md:h-screen md:flex md:items-center md:justify-center">
-                            <div className="w-5/6 mx-auto md:w-11/12 overflow-hidden">
-                                <img src={hero3} alt="" className="md:h-screen object-cover md:py-5 rounded-full z-[10]" />
-                            </div>
-                        </div>
-
-
-                        <div className="col-span-1 col-start-2 row-start-3 row-span-4 md:h-screen md:flex md:items-center md:justify-center">
-                            <div className="w-5/6 mx-auto h-full  md:w-11/12 overflow-hidden ">
-                                <img src={hero1} alt="" className="md:h-screen object-cover md:py-5 rounded-full h-full z-[10]" />
-                            </div>
-                        </div>
-                    </div>
+<img src={amorbg} alt="" className="z-[-10] absolute w-screen md:hidden pt-6" />
+                         
+                         <div className="md:w-2/3 h-[500px] flex flex-row gap-3 p-3">
+                             <div className="grid content-start md:h-screen md:flex md:items-center md:justify-center">
+                                 <div className="md:w-11/12 ">
+                                     <img src={hero3} alt="" className="md:h-screen object-cover md:py-5 rounded-full z-[10]" />
+                                 </div>
+                             </div>
+     
+     
+                             <div className="md:h-screen md:flex md:items-center md:justify-center grid content-end">
+                                 <div className="md:w-11/12 ">
+                                     <img src={hero1} alt="" className="md:h-screen md:object-cover md:py-5 rounded-full z-[10]" />
+                                 </div>
+                             </div>
+                         </div>
 
                     <div className="md:w-1/3 md:h-screen md:flex md:items-center md:justify-center hidden">
                         <div className="md:w-11/12 h-10/12 overflow-hidden ">

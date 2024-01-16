@@ -1,16 +1,16 @@
 import ondita from "./../../icons/ondita.svg"
 
 const GuestDetail = ({ id, nombre, apellido, telefono, email, cantidad, asiste, closeDetail }) => {
-
+console.log(asiste);
 
 
 
     return (
         <>
             <div className="absolute inset-0 z-50 flex justify-center items-center font-julius text-white">
-                <div className="bg-white rounded-3xl w-5/6 h-1/3 flex justify-center items-center">
+                <div className="rounded-3xl w-5/6 flex justify-center items-center">
 
-                    <div className="bg-green-950 opacity-50 w-11/12 pb-8 rounded-3xl">
+                    <div className="bg-green-950 w-11/12 pb-8 rounded-3xl">
 
                         <div className="flex justify-end mr-20 pt-2">
                             <button onClick={closeDetail} className="bg-musgo hover:bg-musgo2 rounded-full py-2 w-10 md:w-24 font-julius text-white">
@@ -34,8 +34,12 @@ const GuestDetail = ({ id, nombre, apellido, telefono, email, cantidad, asiste, 
                                 </div>
                             </div>
 
-                            <div className="flex justify-center">
+                            <div className="flex justify-center mb-3">
                                 <p>Grupo familiar: {cantidad}</p>
+                            </div>
+
+                            <div className="flex justify-center">
+                                <p>Asiste: {asiste ? "Si" : "No"}</p>
                             </div>
 
                         </div>
