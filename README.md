@@ -1,41 +1,47 @@
-# React + Vite
+<h1 align="center" id="title">Event invitation</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p id="description">A PERN stack-based SPA (PostgreSQL Express.js React Node.js) is crafted to efficiently manage CRUD operations.<br>The application streamlines event planning and enhances user interaction.<br>It features an inviting landing page with interactive buttons: one to add the event to your Google Calendar another to view the location on Google Maps and a button to access a gift option with banking details which are copied to the clipboard for easy transaction.<br>There's also a button directing to a view of the couple's selected gifts. If a guest selects a gift the system checks for their registration status linking the gift to their name registration.<br>Similarly confirming event attendance triggers an option to view and select gifts associating them with the user's response.<br>Administrators can log in via Auth0 to access a dashboard where they can view registered guests adjust attendance remove invitees and manage the gift list – modifying deleting or adding items and uploading photos from their computer all integrated into a PostgreSQL database.</p>
 
-Currently, two official plugins are available:
+<h2>🚀 Demo</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://invitation-front.vercel.app/](https://invitation-front.vercel.app/)
 
+<h2>Project Screenshots:</h2>
 
+<img src="https://i.ibb.co/yP8wMTr/1.png" alt="project-screenshot" width="1366" height="768/">
 
+<img src="https://i.ibb.co/bQFJbxH/2.png" alt="project-screenshot" width="1366" height="768/">
 
-npm install vite@4.4.0
+  
+  
+<h2>🧐 Features</h2>
 
-********************
+Here're some of the project's best features:
 
-npm install react-router-dom
-npm i redux redux-thunk react-redux axios
-npm install react-icons --save
+*   responsive
 
-*****************
+<h2>🛠️ Installation Steps:</h2>
 
-en back:
+<p>1. npm i</p>
 
-npm install nodemailer express dotenv cors
+  
+  
+<h2>💻 Built with</h2>
 
-en .env de back:
-PORT = 3001
-_HOST= "smtp.gmail.com" 
-_PORT= 587
-_MAIL= alias@gmail.com
-_PASSWORD= contraseña de dispositivos
+Technologies used in the project:
 
-DB_USER= dbUser
-DB_PASSWORD= bdPassword
-DB_HOST= 5432
+*   PosgrSQL
+*   Express
+*   ReactJs
+*   NodeJs
+*   Tailwind
+*   Javascript
+*   HTML
+*   CSS
 
-********************
+<h2>💖Like my work?</h2>
 
-
+let me know:  
+https://twitter.com/IvethDev  
+https://www.linkedin.com/in/iveth-gonzalez-98799895/
 
